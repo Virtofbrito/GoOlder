@@ -1,0 +1,22 @@
+{% extends "_layouts/auth.njk" %}
+
+{%block body %}
+  {# action chama a rota #}
+  <form action="/check" method="POST">
+    <img src="/images/logo.svg" height="100" />
+
+    <a>
+      <strong>Olá!</strong>
+    </a>
+    <div>
+      <a> Antes de continuar, gostaríamos<br>de te conhecer melhor.<br>
+      Por favor, nos diga sua idade</a>
+    </div>
+
+    <input type="number" name="age" placeholder="Insira sua idade" />
+
+    <button type="submit">Entrar</button>
+
+  </form>
+
+{% endblock %}
